@@ -22,7 +22,7 @@ resource "aws_instance" "myec2vm" {
     aws_security_group.vpc-ssh.id,
     aws_security_group.vpc-web.id
   ]
-  count = 1
+  count = 2
   tags = {
     "Name" = "Atlantis_Eval_Count_${count.index}"
   }
@@ -86,15 +86,3 @@ resource "aws_security_group" "vpc-web" {
   }
 }
 
-resource "aws_s3_bucket" "insane" {
-  bucket = "jc_eval_atlantis"
-
-  tags = {
-    Name        = "Atlantis bucket"
-    Environment = "Dev"
-  }
-}
-# resource "aws_s3_bucket_acl" "atlantis" {
-#   bucket = aws_s3_bucket.atlantis.id
-#   acl    = "private"
-# }
