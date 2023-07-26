@@ -22,7 +22,7 @@ resource "aws_instance" "myec2vm" {
     aws_security_group.vpc-ssh.id,
     aws_security_group.vpc-web.id
   ]
-  count = 2
+  count = 5
   tags = {
     "Name" = "Atlantis_Eval_Count_${count.index}"
   }
