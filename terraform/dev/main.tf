@@ -95,7 +95,7 @@ resource "aws_s3_bucket" "atlantis" {
   }
 }
 
-resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.atlantis.id
-  acl    = "private"
-}
+# resource "aws_s3_bucket_acl" "atlantis" {
+#   bucket = aws_s3_bucket.atlantis.id
+#   acl    = "private"
+# }
