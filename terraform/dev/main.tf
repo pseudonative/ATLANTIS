@@ -86,4 +86,3 @@ resource "aws_security_group" "vpc-web" {
   }
 }
 
-# comment

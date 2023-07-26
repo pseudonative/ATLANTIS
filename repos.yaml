@@ -12,8 +12,7 @@ workflows:
             name: TF_WORKSPACE
             command: echo $WORKSPACE
         - init
-        # - plan: 
-        #     extra_args: ["-var-file=tfvars/$WORKSPACE.tfvars"]
+        - plan
     apply:
       steps:  
         - env: 
