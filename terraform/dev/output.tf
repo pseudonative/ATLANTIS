@@ -23,10 +23,10 @@ output "for_output_map2" {
   value = {for c, instance in aws_instance.myec2vm: c => instance.public_dns}
 }
 
-output "legacy_splat_instance_publicdns" {
-  description = "legacy splat operator"
-  value = aws_instance.myec2vm.*.public_dns
-}
+# output "legacy_splat_instance_publicdns" {
+#   description = "legacy splat operator"
+#   value = aws_instance.myec2vm.*.public_dns
+# }
 
 output "latest_splat_instance_publicdns" {
   description = "latest splat operator"

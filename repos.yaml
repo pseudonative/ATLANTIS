@@ -5,7 +5,7 @@ repos:
       - run: "cat /Users/jeremy/Terraform_stuff/ATLANTIS/atlantis.yaml > atlantis.yaml"
 
 workflows:
-  poc:
+  default:
     plan:
       steps:
         - env:
