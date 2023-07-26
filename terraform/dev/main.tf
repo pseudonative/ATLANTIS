@@ -87,14 +87,13 @@ resource "aws_security_group" "vpc-web" {
 }
 
 resource "aws_s3_bucket" "atlantis" {
-  bucket = "atlantisTesting"
+  bucket = "atlantis"
 
   tags = {
-    Name        = "atlantisTesting"
+    Name        = "Atlantis bucket"
     Environment = "Dev"
   }
 }
-
 # resource "aws_s3_bucket_acl" "atlantis" {
 #   bucket = aws_s3_bucket.atlantis.id
 #   acl    = "private"
