@@ -86,7 +86,7 @@ resource "aws_security_group" "vpc-web" {
   }
 }
 
-resource "aws_s3_bucket" "atlantis" {
+resource "aws_s3_bucket" "insane" {
   bucket = "jc_eval_atlantis"
 
   tags = {
