@@ -49,7 +49,7 @@ resource "aws_security_group" "vpc-ssh" {
   }
 
   tags = {
-    Name = "vpc-ssh"
+    Name = "vpc-ssh-sg"
   }
 }
 
@@ -82,7 +82,7 @@ resource "aws_security_group" "vpc-web" {
   }
 
   tags = {
-    Name = "vpc-web"
+    Name = "vpc-web-sg"
   }
 }
 
