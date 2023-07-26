@@ -87,7 +87,7 @@ resource "aws_security_group" "vpc-web" {
 }
 
 resource "aws_s3_bucket" "atlantis" {
-  bucket = "atlantis"
+  bucket = "jc_eval_atlantis"
 
   tags = {
     Name        = "Atlantis bucket"
